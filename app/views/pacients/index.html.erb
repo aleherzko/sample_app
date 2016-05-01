@@ -1,0 +1,11 @@
+<h1>Pacientes</h1>
+<p>Resumen de pacientes</p>
+
+<% @pacients.each do |pacient|  %>
+
+<h2><%= pacient.fname + " " + pacient.lname %></h2>
+<br>
+
+<%= link_to "Ver Paciente", pacient %>
+
+<% end  %>

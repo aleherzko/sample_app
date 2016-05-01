@@ -1,0 +1,6 @@
+<h1><%= @pacient.fname + " " + @pacient.lname %></h1>
+
+<ul>
+	<li><%= link_to "Editar Paciente", edit_pacient_path(@pacient) %></li>
+	<li><%= button_to 'Eliminar Paciente',  @pacient,  method: :delete, data: { confirm: 'Estas seguro?' } %></li>
+</ul>
